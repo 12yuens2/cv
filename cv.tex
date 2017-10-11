@@ -4,9 +4,12 @@
 \usepackage{titlesec}
 \usepackage[hidelinks]{hyperref}
 \usepackage{color}
+\usepackage{fontawesome}
+
+\newcommand{\n}[0]{\\[\baselineskip]}
 
 \titleformat{\section}
-	{\normalfont\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+	{\normalfont\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 
 
 %--------------------BEGIN DOCUMENT----------------------
@@ -18,18 +21,23 @@
 
 %--------------------TITLE-------------
 \par{\centering
-		{\Huge Sizhe Yuen
-	}\bigskip\par}
+		{\Large \textbf{Sizhe Yuen}
+	}\par}
+
+\begin{center}
+LB11 University Hall, Kennedy Gardens, St Andrews, KY16 9DL. M: 07481 116190\\
+\href{https://github.com/12yuens2}{\faGithub\ 12yuens2} \ \ \ \href{https://www.linkedin.com/in/sizhe/}{\faLinkedin\ sizhe/} \ \ \ \href{mailto:sy35@st-andrews.ac.uk}{\faEnvelopeO\ sy35@st-andrews.ac.uk}
+\end{center}
 
 %--------------------SECTIONS-----------------------------------
-\section*{Personal Information}
+\section*{Education}
+\begin{tabular}{r|p{15cm}}
+\textsc{2014 to present} & \textbf{University of St. Andrews}, \textit{MSci Hons Computer Science (expected 1st)}
+\n
 
-\begin{tabular}{rl}
-    \textbf{Address:}   & LB11 University Hall, Kennedy Gardens, St Andrews, Fife KY16 9DL\\
-    \textbf{Phone:}     & +44 07481 116190, +852 6167 3067 \\
-    \textbf{Email:}     & \texttt{\href{mailto:sy35@st-andrews.ac.uk}{sy35@st-andrews.ac.uk}} \\
-    \textbf{GitHub:}    & \texttt{\href{https://github.com/12yuens2}{https://github.com/12yuens2}}
+\textsc{2012-2014} & \textbf{Shatin College, Hong Kong}, \textit{IB Diploma 35 points}
 \end{tabular}
+
 
 \section*{Work Experience}
 \begin{tabular}{r|p{15cm}}
@@ -71,16 +79,6 @@
 \begin{tabular}{r|p{15cm}}
 \textsc{2014 IB Diploma} &  35 points\\
 \textsc{Languages} & C, Java, Haskell, Python, Javascript, Node.js, HTML, CSS, PHP, VBA, MySQL\\
-\end{tabular}
-
-\section*{Education}
-\begin{tabular}{r|p{15cm}}
-\textsc{2014 to present} & University of St. Andrews, Year 4\\
-
-\textsc{2012-2014} & Shatin College Hong Kong, Year 12 to Year 13\\
-
-\textsc{2007-2012} & Renaissance College Hong Kong, Year 7 to Year 11\\
-
 \end{tabular}
 
 \section*{Hackathons and Competitions}
