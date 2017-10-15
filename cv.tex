@@ -7,10 +7,14 @@
 \usepackage{fontawesome}
 \usepackage{multicol}
 \usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
 
 \newcommand{\n}[0]{\\[\baselineskip]}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{4cm}}
 
-\setlist[itemize]{topsep=0pt}
+\setlist[itemize]{noitemsep, topsep=0pt}
 
 \titleformat{\section}
 	{\normalfont\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
@@ -36,7 +40,7 @@ LB11 University Hall, Kennedy Gardens, St Andrews, KY16 9DL. M: 07481 116190\\
 %--------------------SECTIONS-----------------------------------
 \section*{Education}
 \begin{tabular}{r|p{15cm}}
-\textsc{2014 to present} & \textbf{University of St. Andrews}, \textit{MSci Hons Computer Science (expected 1st)}
+\textsc{2014-present} & \textbf{University of St. Andrews}, \textit{MSci Hons Computer Science (expected 1st)}
 \n
 
 \textsc{2012-2014} & \textbf{Shatin College, Hong Kong}, \textit{IB Diploma 35 points}
@@ -83,6 +87,16 @@ LB11 University Hall, Kennedy Gardens, St Andrews, KY16 9DL. M: 07481 116190\\
 \end{itemize}%
 \end{multicols}
 
+\section*{Projects}
+\begin{tabular}{R|p{14cm}}
+\textbf{Settlers of Catan} & Year long junior honours team project to create a digital version of the Settlers of Catan board game. Worked together in a team of 4 where I was responsible for the backend in Java. Participated in inter-team discussions for a communication protocol that allowed a game to be played over different implementations. \\
+\multicolumn{2}{c}{} \\
+
+\textbf{Unix file system} & Implemented a simple \texttt{POSIX} file system in C using unqlite key-value store for persistent storage. Features included a tree-structured directory hierarchy with sub-directories and file, directory and meta-data creation, update and deletion.\\
+\multicolumn{2}{c}{} \\
+
+\textbf{Multicast file distribution protocol} & Designed and implemented a protocol to reliably and efficiently replicate whole files on persistent storage across multiple nodes in C. Made design decisions regarding the use of UDP multicast and TCP control messages based on observations during initial deployment.\\
+\end{tabular}
 
 \section*{Hackathons and Competitions}
 \begin{tabular}{r|p{14cm}}
