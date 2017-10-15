@@ -5,8 +5,12 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{color}
 \usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{enumitem}
 
 \newcommand{\n}[0]{\\[\baselineskip]}
+
+\setlist[itemize]{topsep=0pt}
 
 \titleformat{\section}
 	{\normalfont\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
@@ -39,47 +43,46 @@ LB11 University Hall, Kennedy Gardens, St Andrews, KY16 9DL. M: 07481 116190\\
 \end{tabular}
 
 
+\section*{Skills and Abilities}
+\begin{tabular}{r|p{15cm}}
+\textsc{Programming Languages} & C, Java, Python, Haskell, Javascript, VBA\\
+
+\textsc{Tools and Frameworks} & Linux, Git, \LaTeX, JUnit, Processing, Node.js
+\end{tabular}
+
 \section*{Work Experience}
 \begin{tabular}{r|p{15cm}}
 
-
-\textsc{June-July 2017} & Programmer Trainee (Summer) at \textsc{New Modern Technology Ltd.} \\
+\textsc{June-July 2017} & \textbf{New Modern Technology Ltd. Hong Kong} Programmer Trainee (Summer) \\
 
 &\footnotesize{Worked on adding enhancements to two existing Java projects with frameworks such as J2EE, Hibernate and GWT.}\\
 \multicolumn{2}{c}{} \\
 
-
-\textsc{May-August 2016} & Trainee at \textsc{KPMG}, Hong Kong \\
+\textsc{May-August 2016} & \textbf{KPMG China, Hong Kong} Trainee \\
  
 &\footnotesize{Wrote VBA modules in Word to create custom toolbars with useful macros. Designed HTML pages with CSS and JS for new branding and was responsible for internet/intranet updates for the multimedia team.}\\\multicolumn{2}{c}{} \\
 
 
-\textsc{June-August 2015} & Summer Intern at \textsc{HongKong International Terminals} \\
+\textsc{June-August 2015} & \textbf{HongKong International Terminals} Summer Intern\\
 
 &\footnotesize{Wrote VBA macros in Excel to transform data logs, helped business analyst with writing user specifications for system updates and worked on a project with other interns to raise fitness awareness in the workplace.}\\
 
 \end{tabular}
 
 \section*{Awards}
-\begin{tabular}{r|p{17cm}}
-\textsc{2017} & Winner of the Morgan Stanley challenge (\textit{Make a game from a given constraint and theme}) at Hack the Burgh, Edinburgh\\
+\setlength\multicolsep{0pt}
+\begin{multicols}{2}
+\begin{itemize}
+\item University of St Andrews Dean's List (2017, 2016, 2015)
+\item Winner of the Morgan Stanley Challenge at Hack the Burgh, Edinburgh (2017)
+\end{itemize}
+\columnbreak
+\begin{itemize}
+\item Medal for performance in Programming Projects module (2015)
+\item Shatin College Computer Science Outstanding Student Award (2014)
+\end{itemize}%
+\end{multicols}
 
-\textsc{2016/17} & Dean's List (\textit{Awarded to students who average above 16.5 in all modules across the academic year}), University of St. Andrews \\
-
-\textsc{2015/16} & Dean's List  \\
-
-\textsc{2014/15} & Dean’s List, University of St Andrews\\
-
-\textsc{2014/15} & Medal (\textit{Awarded for performance in Module CS1006 - Programming Projects}), University of St Andrews\\
-
-\textsc{2014} & Computer Science Outstanding Student Award, Shatin College \\
-\end{tabular}
-
-\section*{Qualifications and Technical Skills}
-\begin{tabular}{r|p{15cm}}
-\textsc{2014 IB Diploma} &  35 points\\
-\textsc{Languages} & C, Java, Haskell, Python, Javascript, Node.js, HTML, CSS, PHP, VBA, MySQL\\
-\end{tabular}
 
 \section*{Hackathons and Competitions}
 \begin{tabular}{r|p{14cm}}
