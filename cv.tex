@@ -9,6 +9,7 @@
 \usepackage{enumitem}
 \usepackage{booktabs}
 \usepackage{array}
+\usepackage{makecell}
 
 \newcommand{\n}[0]{\\[\baselineskip]}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}p{4cm}}
@@ -47,18 +48,20 @@ LB11 University Hall, Kennedy Gardens, St Andrews, KY16 9DL. \faMobile\ (+44) 07
 %--------------------SKILLS-----------------------------------
 \section*{Skills and Abilities}
 \begin{tabular}{r|p{15cm}}
-\textsc{Programming Languages} & C, Java, Python, Haskell, Javascript, VBA\\
+\textsc{Programming Languages} & Java, Python, C, Haskell, Javascript, VBA\\
 
-\textsc{Tools and Frameworks} & Linux, Git, \LaTeX, JUnit, Processing, Node.js
+\textsc{Tools and Frameworks} & Linux, Git, \LaTeX, Node.js, Travis CI, Bosun
 \end{tabular}
 
 %--------------------WORK EXPERIENCE-----------------------------------
 \section*{Work Experience}
+
+\renewcommand{\arraystretch}{1.1}
 \begin{tabular}{r|p{16cm}}
+\textsc{June 2018-Present} & \textbf{Skyscanner, Edinburgh} Software Engineering Intern \\
 
-\textsc{June 2018-Present} & \textbf{Skyscanner} Software Engineering Intern \\
+&\footnotesize{Working on the data platform team which provides logging, monitoring and alerting services for other teams in the company, centred around real time data. Our stack consists of open source technologies such as Kafka, OpenTSDB, Bosun and Grafana, deployed via Docker images on AWS EC2.} \n
 
-&\footnotesize{}\n
 
 \textsc{June-July 2017} & \textbf{New Modern Technology Ltd. Hong Kong} Programmer Trainee (Summer) \\
 
@@ -93,16 +96,20 @@ LB11 University Hall, Kennedy Gardens, St Andrews, KY16 9DL. \faMobile\ (+44) 07
 
 %--------------------PROJECTS-----------------------------------
 \section*{Projects}
-\begin{tabular}{p{4cm}|p{15cm}}
-\textbf{Settlers of Catan} & Year long team project to create a digital Settlers of Catan board game. Worked in a team of 4 where I was responsible for the backend in Java. Participated in inter-team discussions for a communication protocol that allowed a game to be played over different implementations. \n
 
-\textbf{Unix file system} & Implemented a simple \texttt{POSIX} file system in C using unqlite key-value store for persistent storage. Features included a tree-structured directory hierarchy with sub-directories and file, directory and meta-data creation, update and deletion.\n
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{4.2cm}|p{15cm}}
+\textbf{Settlers of Catan} & Year long team project to create a digital Settlers of Catan board game. Worked in a team of 4 where I was responsible for the backend and AI in Java. Participated in inter-team discussions for a communication protocol that allowed a game to be played over different implementations. \n
 
-\textbf{Multicast file distribution protocol} & Designed and implemented a protocol to reliably and efficiently replicate whole files on persistent storage across multiple nodes in C. Made design decisions regarding the use of UDP multicast and TCP control messages based on observations during initial deployment.\\
+%\textbf{Unix file system} & Implemented a simple \texttt{POSIX} file system in C using unqlite key-value store for persistent storage. Features included a tree-structured directory hierarchy with sub-directories and file, directory and meta-data creation, update and deletion.\n
+
+%\textbf{Multicast file distribution protocol} & Designed and implemented a protocol to reliably and efficiently replicate whole files on persistent storage across multiple nodes in C. Made design decisions regarding the use of UDP multicast and TCP control messages based on observations during initial deployment.\\
 
 %\textbf{Reversi/Othello} & Implemented the Othello board game with Haskell in a team of 3.\\
 
-%\textbf{Graph matching with lobsters}
+\makecell[tl]{\textbf{Graph matching with} \\ \textbf{lobsters} \\ \textit{BSc dissertation}} & \makecell[tl]{Applied computer vision and on images of lobsters to represent their bodies as attributed graphs \\ by detecting points of interest. Graph matching techniques were then used to discover and measure \\ properties such as the lobster's size and maturity.} \n
+
+\makecell[tl]{\textbf{Dota 2 player prediction} \\ \textit{MSci dissertation}} & \makecell[tl]{Used machine learning to predict the player behind the keyboard through behavioural features \\ such as mouse movements and in-game decisions. Features were extracted and parsed from match \\ replays and the performance of different combinations of features were compared.}
 \end{tabular}
 
 
