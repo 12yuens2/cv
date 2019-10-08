@@ -10,14 +10,14 @@
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{makecell}
+\usepackage{parskip}
 
 \newcommand{\n}[0]{\\[\baselineskip]}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}p{4cm}}
 
 \setlist[itemize]{topsep=0pt}
 
-\titleformat{\section}
-	{\normalfont\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\titleformat{\section}{\normalfont\bfseries}{\thesection}{0pt}{}[{\titlerule[0.8pt]}]
 
 
 %--------------------BEGIN DOCUMENT----------------------
@@ -40,6 +40,8 @@
 %--------------------EDUCATION-----------------------------------
 \section*{Education}
 \begin{tabular}{r|p{15cm}}
+\textsc{2019-Present} & \textbf{University of Southampton}, \textit{PhD in Engineering}
+\\
 \textsc{2014-2019} & \textbf{University of St. Andrews}, \textit{MSci (Hons) Computer Science First Class}
 \\
 \textsc{2012-2014} & \textbf{Shatin College, Hong Kong}, \textit{Bilingual IB Diploma 35 points}
@@ -48,35 +50,33 @@
 %--------------------SKILLS-----------------------------------
 \section*{Skills and Abilities}
 \begin{tabular}{r|p{15cm}}
-\textsc{Programming Languages} & Java, Python, C, Haskell, Javascript, Go, VBA\\
+\textsc{Programming Languages} & Java, Python, C, Haskell, Javascript, Go\\
 
-\textsc{Tools and Frameworks} & Linux, Git, \LaTeX, Node.js, Travis CI, Bosun
+\textsc{Tools and Frameworks} & Linux, Git, \LaTeX, AWS, Node.js, Travis, Bosun
 \end{tabular}
 
 %--------------------WORK EXPERIENCE-----------------------------------
 \section*{Work Experience}
+%\renewcommand{\arraystretch}{1.1}
+\textbf{Skyscanner, Edinburgh} \textit{Software Engineering Intern}
+\hfill
+\textsc{June 2018-September 2019} \\
+Part of the data platform team which provided logging, monitoring and alerting services for other teams in the company, centred around real time data. The stack consists of open source technologies such as Kafka, OpenTSDB, Bosun, Grafana and ELK deployed via containers on AWS through a variety of methods including AMIs and Ansible.
 
-\renewcommand{\arraystretch}{1.1}
-\begin{tabular}{r|p{16cm}}
-\textsc{June 2018-Present} & \textbf{Skyscanner, Edinburgh} Software Engineering Intern \\
+\textbf{New Modern Technology Ltd. Hong Kong} \textit{Programmer Trainee (Summer)}
+\hfill
+\textsc{June-July 2017} \\
+Worked on development for a financial analysis system including user interface, backend functionality and data maintenance with frameworks such as J2EE, Hibernate and GWT. Supported a production software management suite with compatibility testing and maintenance.
 
-&\footnotesize{Working on the data platform team which provides logging, monitoring and alerting services for other teams in the company, centred around real time data. Our stack consists of open source technologies such as Kafka, OpenTSDB, Bosun and Grafana, deployed via containers on AWS.} \n
+\textbf{KPMG China, Hong Kong} \textit{Trainee}
+\hfill
+\textsc{May-August 2016} \\
+Wrote VBA modules in Word to create custom toolbars with useful macros. Designed HTML pages with CSS and JS for new branding and was responsible for internet/intranet updates for the multimedia team.
 
-
-\textsc{June-July 2017} & \textbf{New Modern Technology Ltd. Hong Kong} Programmer Trainee (Summer) \\
-
-&\footnotesize{Worked on development for a financial analysis system including user interface, backend functionality and data maintenance with frameworks such as J2EE, Hibernate and GWT. Participated in support for a production software management suite including compatibility testing and maintenance.}\n
-
-
-\textsc{May-August 2016} & \textbf{KPMG China, Hong Kong} Trainee \\
- 
-&\footnotesize{Wrote VBA modules in Word to create custom toolbars with useful macros. Designed HTML pages with CSS and JS for new branding and was responsible for internet/intranet updates for the multimedia team.}\n
-
-\textsc{June-August 2015} & \textbf{HongKong International Terminals} Summer Intern\\
-
-&\footnotesize{Wrote VBA macros in Excel to transform data logs, helped business analyst with writing user specifications for system updates and worked on a project with other interns to raise fitness awareness in the workplace.}\\
-
-\end{tabular}
+\textbf{HongKong International Terminals} \textit{Summer Intern}
+\hfill
+\textsc{June-August 2015} \\
+Wrote VBA macros in Excel to transform shipping data logs, helped business analyst with writing user specifications for system updates and worked on a project with other interns to raise fitness awareness in the workplace.
 
 %--------------------AWARDS-----------------------------------
 \section*{Awards}
@@ -96,10 +96,8 @@
 
 %--------------------PROJECTS-----------------------------------
 \section*{Projects}
-
-\renewcommand{\arraystretch}{1.3}
-\begin{tabular}{p{4.2cm}|p{15cm}}
-\textbf{Settlers of Catan} & Year long team project to create a digital Settlers of Catan board game. Worked in a team of 4 where I was responsible for the backend and AI in Java. Participated in inter-team discussions for a communication protocol that allowed a game to be played over different implementations. \n
+\textbf{Settlers of Catan} \textit{Junior Honours project} \\
+Year long team project to create a digital Settlers of Catan board game. Worked in a team of 4 where I was responsible for the backend and AI in Java. Participated in inter-team discussions for a communication protocol that allowed a game to be played over different implementations.
 
 %\textbf{Unix file system} & Implemented a simple \texttt{POSIX} file system in C using unqlite key-value store for persistent storage. Features included a tree-structured directory hierarchy with sub-directories and file, directory and meta-data creation, update and deletion.\n
 
@@ -107,10 +105,11 @@
 
 %\textbf{Reversi/Othello} & Implemented the Othello board game with Haskell in a team of 3.\\
 
-\makecell[tl]{\textbf{Graph matching with} \\ \textbf{lobsters} \\ \textit{BSc dissertation}} & \makecell[tl]{Applied computer vision and on images of lobsters to represent their bodies as attributed graphs \\ by detecting points of interest. Graph matching techniques were then used to discover and measure \\ properties such as the lobster's size and maturity.} \n
+\textbf{Graph matching with lobsters} \textit{BSc dissertation} \\
+Applied computer vision algorithms on images of lobsters to represent their bodies as attributed graphs by detecting points of interest. Graph matching techniques were then used to discover and measure properties such as the lobster's size and maturity.
 
-\makecell[tl]{\textbf{Dota 2 player prediction} \\ \textit{MSci dissertation}} & \makecell[tl]{Used machine learning to predict the player behind the keyboard through behavioural features \\ such as mouse movements and in-game decisions. Features were extracted and parsed from match \\ replays and the performance of different combinations of features were compared.}
-\end{tabular}
+\textbf{Dota 2 player prediction} \textit{MSci dissertation} \\
+Used machine learning to predict the player behind the keyboard through behavioural features such as mouse movements and in-game decisions. Features were extracted and parsed from match replays and the performance of different combinations of features were compared.
 
 
 %--------------------ACTIVITIES-----------------------------------
