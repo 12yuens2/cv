@@ -48,14 +48,27 @@
 & \\
 & \textit{Epigenetics crossover for multi-objective optimisation}
 
-    Analysed existing Evolutionary Computation algorithms
+    % Analysed existing Evolutionary Computation algorithms
+    % based on evolutionary concepts from the Extended Evolutionary Synthesis, and 
+    % identified a gap in epigenetic inheritance.
+    % A novel epigenetic blocking mechanism was then developed and a detailed benchmarking 
+    % suite created to test and compare existing algorithms with the new
+    % mechanism. Hyperparameter optimisation was further studied
+    % find the best performing results on dynamic multi-objective optimisation
+    % problems. The final results were applied to a real world voyage optimisation
+    % problem to reduce fuel consumption and voyage times.
+
+    \begin{itemize}
+        \item Analysed existing Evolutionary Computation algorithms
     based on evolutionary concepts from the Extended Evolutionary Synthesis, and 
     identified a gap in epigenetic inheritance.
-    A novel epigenetic blocking mechanism was then developed and a detailed benchmarking 
-    suite created to test and compare existing algorithms with the new
-    mechanism. A further study into hyperparameter optimisation was made to
-    find the best performing results on dynamic multi-objective optimisation
-    problems.
+    \item Developed a novel epigenetic blocking mechanism and created a detailed benchmarking 
+    suite to test and compare existing algorithms with the new mechanism.
+    \item Investigated the use of hyperparameter optimisation to find the best 
+    performing results on dynamic multi-objective optimisation problems.
+    \item Applied the final results to a real world voyage optimisation
+    problem to reduce fuel consumption and voyage times of international shipping journeys.
+    \end{itemize}
     % to determine their differences and suitability to a new epigenetic mechanism.
     % A novel epigenetic blocking mechanism based on gene regulation is
     % developed and tested on the identified algorithms. Performance on static
@@ -66,7 +79,6 @@
     % requiring different hyperparameters depending on the properties of a problem
     % to achieve the best performance.
 \\
-& \\
 \textsc{2014-2019} & \textbf{University of St. Andrews}, MSci (Hons) Computer Science First Class
 \\
 \textsc{2012-2014} & \textbf{Shatin College, Hong Kong}, Bilingual IB Diploma
@@ -74,7 +86,7 @@
 
 
 %-------------PUBLICATIONS-------------------
-\section*{Publications}
+\section*{Publications and presentations}
 S. Yuen, T. H. G. Ezard, A. J. Sobey.
 \textbf{Epigenetic Opportunities for Evolutionary Computation.} 
 In: \textit{The Journal of Royal Society Open Science} 10.5 (2023) 
@@ -86,6 +98,9 @@ S. Yuen, T. H. G. Ezard, A. J. Sobey.
 In: \textit{Proceedings of the Genetic and Evolutionary Computation Conference Companion 
 (GECCO ’22).} (2022)
 https://doi.org/10.1145/3520304.3529022
+
+
+Presented at the MIT Quest for Intelligence seminar, July 2022.
 \\
 
 S. Yuen, T. H. G. Ezard, A. J. Sobey. \textbf{Comparing the performance of
@@ -93,6 +108,34 @@ S. Yuen, T. H. G. Ezard, A. J. Sobey. \textbf{Comparing the performance of
   multi-objective optimisation problems.}
   (In preparation for \textit{Evolutionary Computation})
 
+
+
+%--------------------PROJECTS-----------------------------------
+\section*{Previous projects}
+% \textbf{Settlers of Catan} \textit{Junior Honours project} \\
+% Year long team project to create a digital Settlers of Catan board game.
+% Worked in a team of 4 where I was responsible for the backend and AI in Java.
+% Participated in inter-team discussions for a communication protocol that allowed a game
+% to be played over different implementations.
+
+%\textbf{Unix file system} & Implemented a simple \texttt{POSIX} file system in C using unqlite key-value store for persistent storage. Features included a tree-structured directory hierarchy with sub-directories and file, directory and meta-data creation, update and deletion.\n
+
+%\textbf{Multicast file distribution protocol} & Designed and implemented a protocol to reliably and efficiently replicate whole files on persistent storage across multiple nodes in C. Made design decisions regarding the use of UDP multicast and TCP control messages based on observations during initial deployment.\\
+
+%\textbf{Reversi/Othello} & Implemented the Othello board game with Haskell in a team of 3.\\
+
+\textbf{Dota 2 player prediction} \textit{MSci dissertation} \\
+Used machine learning algorithms to predict the player behind the keyboard through 
+behavioural features such as mouse movements and in-game decisions. Features were 
+extracted and parsed from match replays, then clean and refined through a data pipeline.
+Finally, the performance of different combinations of features and machine learning 
+techniques were compared.
+\\
+
+\textbf{Graph matching with lobsters} \textit{BSc dissertation} \\
+Applied computer vision algorithms from opencv on images of lobsters to represent their bodies as
+attributed graphs by detecting points of interest. Graph matching techniques were then
+used to discover and measure properties such as the lobster's size and maturity.
 
 %--------------------WORK EXPERIENCE-----------------------------------
 \section*{Work experience}
@@ -117,8 +160,8 @@ S. Yuen, T. H. G. Ezard, A. J. Sobey. \textbf{Comparing the performance of
 Part of the data platform team which provided logging, monitoring and alerting services for
 other teams in the company, centred around real time data. The stack consisted of open source
 technologies such as Kafka, OpenTSDB, Bosun, Grafana, and ELK (Elasticsearch, Kibana)
-deployed via containers on AWS
-through a variety of methods including Amazon Machine Images and Ansible.
+deployed via containers on AWS.
+%through a variety of methods including Amazon Machine Images and Ansible.
 \newline
 
 \textbf{New Modern Technology Ltd. Hong Kong} \textit{Programmer Trainee (Summer)}
@@ -154,45 +197,20 @@ interns to raise fitness awareness in the workplace.
 \end{tabular}
 
 %--------------------AWARDS-----------------------------------
-\section*{Awards}
-\setlength\multicolsep{0pt}
-\begin{multicols}{2}
-\begin{itemize}
-\item University of St Andrews Dean's List (2019, 2018, 2017, 2016, 2015)
-\item Winner of the Morgan Stanley Challenge at Hack the Burgh, Edinburgh (2017)
-\end{itemize}
-\columnbreak
-\begin{itemize}
-\item Medal for performance in Programming Projects module (2015)
-\item Shatin College Computer Science Outstanding Student Award (2014)
-\end{itemize}
-\end{multicols}
+% \section*{Awards}
+% \setlength\multicolsep{0pt}
+% \begin{multicols}{2}
+% \begin{itemize}
+% \item University of St Andrews Dean's List (2019, 2018, 2017, 2016, 2015)
+% \item Winner of the Morgan Stanley Challenge at Hack the Burgh, Edinburgh (2017)
+% \end{itemize}
+% \columnbreak
+% \begin{itemize}
+% \item Medal for performance in Programming Projects module (2015)
+% \item Shatin College Computer Science Outstanding Student Award (2014)
+% \end{itemize}
+% \end{multicols}
 
-%--------------------PROJECTS-----------------------------------
-\section*{Previous projects}
-% \textbf{Settlers of Catan} \textit{Junior Honours project} \\
-% Year long team project to create a digital Settlers of Catan board game.
-% Worked in a team of 4 where I was responsible for the backend and AI in Java.
-% Participated in inter-team discussions for a communication protocol that allowed a game
-% to be played over different implementations.
-
-%\textbf{Unix file system} & Implemented a simple \texttt{POSIX} file system in C using unqlite key-value store for persistent storage. Features included a tree-structured directory hierarchy with sub-directories and file, directory and meta-data creation, update and deletion.\n
-
-%\textbf{Multicast file distribution protocol} & Designed and implemented a protocol to reliably and efficiently replicate whole files on persistent storage across multiple nodes in C. Made design decisions regarding the use of UDP multicast and TCP control messages based on observations during initial deployment.\\
-
-%\textbf{Reversi/Othello} & Implemented the Othello board game with Haskell in a team of 3.\\
-
-\textbf{Dota 2 player prediction} \textit{MSci dissertation} \\
-Used machine learning algorithms to predict the player behind the keyboard through 
-behavioural features such as mouse movements and in-game decisions. Features were 
-extracted and parsed from match replays and the performance of different 
-combinations of features were compared.
-
-
-\textbf{Graph matching with lobsters} \textit{BSc dissertation} \\
-Applied computer vision algorithms on images of lobsters to represent their bodies as
-attributed graphs by detecting points of interest. Graph matching techniques were then
-used to discover and measure properties such as the lobster's size and maturity.
 
 
 %--------------------ACTIVITIES-----------------------------------
